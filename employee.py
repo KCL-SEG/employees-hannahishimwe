@@ -13,8 +13,7 @@ class Employee(ABC):
         
      
     def get_pay(self):
-        pay = str(self.get_pay())
-        return f'Their total pay is {pay}'
+        pass
 
     @abstractmethod
     def __str__(self):
