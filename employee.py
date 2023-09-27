@@ -52,8 +52,7 @@ class SalaryContractEmployee(Employee):
 
         #construct string
         description = f'{self.name} works on a monthly salary of {salary}'
-        if commission_string:
-            description += commission_string
+        description += commission_string
         description+= f'. Their total pay is {pay}.'
 
         return description
@@ -83,8 +82,7 @@ class HourlyContractEmployee(Employee):
 
         #construct string
         description = f'{self.name} works on a contract of {hours} hours at {hourly_wage}/hour'
-        if commission_string:
-            description += commission_string
+        description += commission_string
         description+= f'. Their total pay is {pay}.'
 
         return description
